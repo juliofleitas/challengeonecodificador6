@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <img class="logo" src="img/logo.svg" alt="logo">
+    <div class="container">
+        <form action="#" class="form" method="post">
+            <div class="container-textarea">
+                <button type="reset" class="form__reset">
+                    <img src="img/trash.svg" alt="trash" class="form_reset-img">
+                </button>
+                <textarea class="form__textarea" name="text" placeholder="Ingrese el texto aquí" id="textEncripted"
+                    cols="30" autofocus rows="10"></textarea>
+            </div>
+            <div class="container-btns">
+                <p class="container-btns__warn"><img src="img/exclamation.svg" class="exclamation" alt="exclamation">
+                    Sólo letras minúsculas y sin acentos</p>
+                <div class="btns">
+                    <button type="submit" class="btn btns__encrypt">Encriptar</button>
+                    <button type="submit" class="btn btns__decrypt">Desencriptar</button>
+                </div>
+            </div>
+        </form>
+        <div class="default">
+            <img src="img/person.svg" class="default__img" alt="person">
+            <h2 class="default__title">Ningún mensaje fue encontrado</h2>
+            <p class="default__text">Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+        <div class="result d-none">
+            <textarea class="result__text"></textarea>
+            <button type="button" class="btn result__copy" data-replacement="New text">Copiar</button>
+        </div>
+    </div>
+    <div class="data">
+        <p>&copy; 2024 creado por Julio Fleitas para el challenge One Grupo 6</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
